@@ -39,26 +39,26 @@ $(window).on('load', function() {
 	/* -----------------------------------
 			  2. Sound Setup
 	----------------------------------- */
-	$('body').append('<audio loop autoplay volume="0" id="audio-player"><source src="mp3/song.mp3" type="audio/mpeg"></audio>');
-    	var audio = document.getElementById("audio-player");
-    	audio.volume = 0.2;
+		// $('body').append('<audio loop autoplay volume="0" id="audio-player"><source src="mp3/song.mp3" type="audio/mpeg"></audio>');
+    // 	var audio = document.getElementById("audio-player");
+    // 	audio.volume = 0.2;
 	
-	if($(window).length) {
-		$('.music-bg').css({'visibility':'visible'});
-		$('body').addClass("audio-on");
-		if ($('body').hasClass('audio-off')) {
-        	$('body').removeClass('audio-on');
-		} 
-		$(".music-bg").on('click', function() {
-			$('body').toggleClass("audio-on audio-off");         
-			if ($('body').hasClass('audio-off')) {
-				audio.pause();
-			} 
-			if ($('body').hasClass('audio-on')) {
-				audio.play();
-			}
-		});
-	}
+	// if($(window).length) {
+	// 	$('.music-bg').css({'visibility':'visible'});
+	// 	$('body').addClass("audio-on");
+	// 	if ($('body').hasClass('audio-off')) {
+    //     	$('body').removeClass('audio-on');
+	// 	} 
+	// 	$(".music-bg").on('click', function() {
+	// 		$('body').toggleClass("audio-on audio-off");         
+	// 		if ($('body').hasClass('audio-off')) {
+	// 			audio.pause();
+	// 		} 
+	// 		if ($('body').hasClass('audio-on')) {
+	// 			audio.play();
+	// 		}
+	// 	});
+	// }
 	
 	/* -----------------------------------
 			3. Isotope Portfolio Setup
